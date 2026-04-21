@@ -1,36 +1,109 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💰 Finance Tracker (Fullstack Practice)
 
-## Getting Started
+A personal finance tracking web application built to practice fullstack development, including authentication, CRUD operations, and dashboard analytics.
 
-First, run the development server:
+> ⚠️ This project is still a work in progress.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🧱 Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* **Frontend & Backend:** Next.js (App Router, API Routes)
+* **Database:** PostgreSQL
+* **Authentication:** JWT
+* **Styling:** (ใส่ของมึง เช่น Tailwind / CSS)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## ✨ Features
 
-To learn more about Next.js, take a look at the following resources:
+### 🔐 Authentication
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* Login with JWT
+* Token stored in localStorage
+* Protected API requests
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 💸 Transactions
 
-## Deploy on Vercel
+* Create / Read / Update / Delete transactions
+* Display income & expense
+* Linked with categories
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 🏷 Categories
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* Manage categories
+* Show transaction count per category
+
+### 📊 Dashboard
+
+* Total income & expense summary
+* Category-based breakdown
+
+### 👤 Users
+
+* List users
+* Calculate total income / expense per user
+
+---
+
+## 🗄 Database Design
+
+* **users**
+* **categories**
+* **transactions**
+
+Relationships:
+
+* 1 user → many transactions
+* 1 category → many transactions
+
+---
+
+## ⚙️ API Structure
+
+Built using Next.js API routes:
+
+* `/api/auth/login`
+* `/api/transactions`
+* `/api/categories`
+* `/api/dashboard`
+* `/api/users`
+
+---
+
+## 🚧 Work in Progress
+
+The following features are not fully implemented yet:
+
+* [ ] Date range filter (UI done, backend not connected)
+* [ ] Category filter
+* [ ] Route protection (redirect if not logged in)
+* [ ] Delete confirmation modal
+
+---
+
+## 🧠 What I Learned
+
+* Building a fullstack app using Next.js (frontend + backend)
+* Designing relational database with PostgreSQL
+* Implementing JWT authentication
+* Managing API communication and state
+* Structuring scalable frontend (feature-based structure)
+
+---
+
+## 📌 Notes
+
+This project was built as a practice project to strengthen fullstack development skills.
+Some features are incomplete, but core functionality is working end-to-end.
+
+---
+
+## 🚀 Future Improvements
+
+* Add filtering system (date & category)
+* Improve UI/UX
+* Add charts (e.g., using chart libraries)
+* Optimize performance
+
+---
