@@ -107,3 +107,24 @@ Some features are incomplete, but core functionality is working end-to-end.
 * Optimize performance
 
 ---
+
+  ## ⚙️ Setup Instructions
+
+1. Clone the repository
+2. Install dependencies
+   npm install
+
+3. Setup environment variables
+   Copy `.env.example` and update values
+
+4. Setup database
+   Run SQL from `database.sql`
+
+5. Run the app
+   npm run dev
+
+---
+
+## 👨‍💻 Author
+
+**Naphat Sethabutr**
